@@ -1,0 +1,22 @@
+export const UiColor = {
+  APP_BACKGROUND: '#F2F2F2',
+  STATUS_BAR: '#154051',
+  CORPORATEBLUE: '#00395A',
+  DAIRYBLUE: '#00647F',
+  DARK_BLUE: '#AC431C',
+};
+
+export const TextColor = {
+  DEFAULT: '#000000',
+  TEXT_PRIMARY: '#222222',
+  HINT_COLOR: '#9F9F9F',
+  DARK_BLUE: '#AC431C',
+  GREEN: '#29C577',
+  ORANGE: '#FCAA50',
+  GRAY: '#9F9F9F',
+  BLACK: '#000000',
+  LIGHT_GRAY: '#808080',
+  RED: '#DB4437',
+  WHITE: '#FFFFFF',
+  BLUE: '#0a84ff',
+};

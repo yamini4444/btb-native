@@ -1,0 +1,6 @@
+module Pods_btb_btbTests {
+  umbrella header "Pods-btb-btbTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
