@@ -22,11 +22,9 @@ import {Actions} from 'react-native-router-flux';
 import {IconAsset, Strings, UiColor} from '../../theme';
 import {h, w} from '../../utils/Dimensions';
 import styles from './styles';
-//import {Pages} from 'react-native-pages';
 import {connect} from 'react-redux';
 import {LoginAPI} from './../../actions/Login';
-//import {forgetPasswordApi} from './../../actions/forgetPassword';
-//import {SocialLoginApi} from './../../actions/SocialLogin';
+import OtpInputs from 'react-native-otp-inputs';
 import AsyncStorage from '@react-native-community/async-storage';
 import Styles from '../../component/Drawer/Styles';
 
@@ -37,9 +35,10 @@ let checkedServerStatus = true;
 const height = Dimensions.get('window').height;
 const width = Dimensions.get('window').width;
 
+
 const OtpScreen = ({navigation}) => {
   const screenStatus = navigation.isFocused();
-
+  const [otp, setOtp] = useState("");
   const [email, setEmail] = useState('');
   
 
@@ -59,16 +58,13 @@ const OtpScreen = ({navigation}) => {
 
         <View flex={2}>
          
-            <TextInput
-              style={styles.inputFieldContainer}
-              placeholderTextColor="#383B3F"
-              underlineColorAndroid="transparent"
-              placeholder="Enter Email"
-              autoCapitalize="none"
-              underlineColorAndroid="transparent"
-              onChangeText={(email) => setEmail(email)}
-              value={email}
-            />
+        <View style={{ flexDirection: 'row', paddingLeft: w(5), paddingRight: w(5) }}>
+                        <OtpInputs
+                            numberOfInputs={5}
+                            handleChange={(otp) => setOtp(otp)}
+                            inputStyles={styles.otpInput}
+                        />
+                    </View>
              
           <TouchableOpacity 
           //onPress={doLogin} 

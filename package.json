@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-clipboard/clipboard": "^1.8.4",
     "@react-native-community/async-storage": "^1.7.1",
     "@react-native-community/netinfo": "^5.5.1",
     "@react-native-community/toolbar-android": "^0.1.0-rc.2",
@@ -23,6 +24,7 @@
     "react-native-linear-gradient": "^2.5.6",
     "react-native-localization": "^2.1.6",
     "react-native-modal": "^12.0.3",
+    "react-native-otp-inputs": "^7.0.3",
     "react-native-reanimated": "^1.8.0",
     "react-native-router-flux": "^4.0.6",
     "react-native-safe-area-context": "^3.2.0",
