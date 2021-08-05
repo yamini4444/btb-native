@@ -58,18 +58,18 @@ const OtpScreen = ({navigation}) => {
 
         <View flex={2}>
          
-        <View style={{ flexDirection: 'row', paddingLeft: w(5), paddingRight: w(5) }}>
+        <View style={{ flexDirection: 'row', paddingLeft: w(10), paddingRight: w(10) }}>
                         <OtpInputs
-                            numberOfInputs={5}
+                            numberOfInputs={4}
                             handleChange={(otp) => setOtp(otp)}
                             inputStyles={styles.otpInput}
                         />
                     </View>
              
           <TouchableOpacity 
-          //onPress={doLogin} 
+          onPress={Actions.Login} 
           style={styles.buttonContainer}>
-            <Text style={styles.AndText}>Change password</Text>
+            <Text style={styles.AndText}>CHANGE PASSWORD</Text>
           </TouchableOpacity>
          
         </View>

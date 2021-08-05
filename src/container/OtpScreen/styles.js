@@ -198,6 +198,15 @@ export default StyleSheet.create({
     color: '#fff',
     fontWeight: '400',
   },
+  otpInput: {
+    height: h(8),
+    width: w(13),
+    borderRadius: 10,
+    backgroundColor: 'rgba(243, 242, 251, 255)',
+    marginTop: h(2),
+    textAlign: 'center',
+    alignSelf: 'center'
+},
   ButtonJoined: {
     alignSelf: 'center',
     top: h(20),

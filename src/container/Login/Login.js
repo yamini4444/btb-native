@@ -178,7 +178,7 @@ const Login = ({navigation}) => {
            onPress={() => captchaForm.show()}
           //onPress={doLogin} 
           style={styles.buttonContainer}>
-            <Text style={styles.AndText}>Login</Text>
+            <Text style={styles.AndText}>LOGIN</Text>
           </TouchableOpacity>
           <ConfirmGoogleCaptcha
           // eslint-disable-next-line no-undef
